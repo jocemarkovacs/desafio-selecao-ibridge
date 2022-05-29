@@ -1,0 +1,139 @@
+/* GLOBAL */
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+input{   
+    padding: 10px;   
+    border-radius: 12px;
+    width: 80%;
+    display: block;
+}
+small{
+    margin-left: 10px;
+    color: white
+}
+h1{
+    text-align: center;
+    color: white;
+    width: 419px;
+    padding-top: 50px;    
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+h3{
+    text-align: center;
+    font-size: 22px;
+}
+ul{
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* implementação de um todo */
+/* .clearfix{
+    overflow: auto;
+}
+.clearfix::after{
+    content:"";
+    clear:both;
+    display: block;
+} */
+
+/* customização */
+.top{
+    background: url('../images/fundo.png') no-repeat bottom fixed;
+    padding: 30px;    
+    margin: auto;
+    background-size: cover;
+}
+
+.content-top {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 55%
+}
+.content-top > div {
+    height: 100%;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.produtividade{
+    background-color: #b5cf42;
+    font-size: 17px;    
+}
+
+.header-right{
+    background: rgba(0, 0, 0, .35);
+    /* height: 100%; */
+}
+
+.formulario{
+    padding: 20px 0 20px 40px;    
+    border-radius: 5px;    
+    margin: 10px;
+}
+.formulario .form-submit{
+    margin: 30px 0 0 0;
+    display: block;    
+    width: 85%;
+    background: #9aba2b;
+    padding: 17px;
+    font-size: 20px;
+    color: white;
+}
+
+.servicos{
+    text-align: center;
+    padding-top: 20px;
+    /* 
+    0 para top e bottom e auto na left e right. 
+    Para ter efeito é preciso especificar uma width
+    */
+    margin: 0 auto; 
+    width: 1140px;
+}
+.servico{
+    width: 33.33%;
+    height: 200px;
+    float: left;
+}
+
+.servico-conteudo {
+    padding: 10px 25px;
+}
+
+.servico-conteudo::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+
+.peca-dem {
+    margin: 500px auto 100px auto;
+    background: #333;
+    height: 200px    
+}
+
+.btn-peca-demonstracao {
+    margin: 4% 5% 6% 36%;
+    width: 500px;
+    background: #9aba2b;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none; /* remove sublinhado do link */
+}
+.btn-peca-demonstracao:hover {
+    background: #fff;
+    color: #9aba2b;
+    border: #9aba2b 1px solid;
+}
+.box-btn{
+    padding: 84px 17% 0 18%;
+}
