@@ -10,6 +10,7 @@ input{
     display: block;
 }
 small{
+    padding-bottom: 10px;
     margin-left: 10px;
     color: white
 }
@@ -17,12 +18,14 @@ h1{
     text-align: center;
     color: white;
     width: 419px;
-    padding-top: 50px;    
+    padding-top: 50px; 
+    font-size: 32px;   
 }
 h2{
     color: white;
     text-align: center;
-    margin-top: auto;
+    margin-top: 15px;
+
 }
 h3{
     text-align: center;
@@ -45,40 +48,98 @@ ul{
 
 /* customização */
 .top{
-    background: url('../images/fundo.png') no-repeat bottom fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../../images/fundo.png') no-repeat bottom fixed;
     padding: 30px;    
     margin: auto;
     background-size: cover;
+    background-position: center;
 }
-
 .content-top {
     overflow: hidden;
     margin: 0 auto;
-    width: 55%
+    width: 55%;
+    height: 100%;
+    /* padding: 10px; */
 }
 .content-top > div {
     height: 100%;
     float: left;
-    width: 50%;
+    width: 38%;
+    margin-left: 50px;
     box-sizing: border-box;
 }
-
 .produtividade{
     background-color: #b5cf42;
-    font-size: 17px;    
+    font-size: 20px; 
+    width: 100%;
 }
-
+.aumente{
+    align-self: center;
+    font-weight: 600;
+}
 .header-right{
     background: rgba(0, 0, 0, .35);
-    /* height: 100%; */
+    /* height: 500px; */
+    width: 400px;
+    /* margin-bottom: 10px; */
+}
+.formulario{    
+    padding: 20px 9px 20px 40px;    
+    border-radius : 5px;    
+    margin: 10px;
+    position: relative;
+}
+.div-form{
+    margin-bottom: 5px;
+    margin-left: 0;
+    position: relative;
+}
+.div-form i{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    visibility: hidden;
+}
+.div-form i{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    visibility: hidden;
+}
+.div-form small{    
+    /* padding: 15px; */
+    bottom:0;
+    left:0px;
+    visibility: hidden;
+}
+/* Error and Success */
+.div-form.success input{
+    border-color:#2ecc71;
+}
+.div-form.error input{
+    border-color:#e74c3c;;
+}
+.div-form.success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+}
+.div-form.error i.fa-exclamation-circle{
+    color:#e74c3c;
+    visibility: visible;
+}
+.div-form.error small{
+    color:#f1b1a9;
+    visibility: visible;
+}
+/* -------------------- */
+
+.formulario label{
+    margin-bottom: 5px;    
+    font-size: 14px;
+    color: white;    
 }
 
-.formulario{
-    padding: 20px 0 20px 40px;    
-    border-radius: 5px;    
-    margin: 10px;
-}
-.formulario .form-submit{
+.formulario .form-submit{    
     margin: 30px 0 0 0;
     display: block;    
     width: 85%;
@@ -87,7 +148,6 @@ ul{
     font-size: 20px;
     color: white;
 }
-
 .servicos{
     text-align: center;
     padding-top: 20px;
@@ -102,24 +162,23 @@ ul{
     width: 33.33%;
     height: 200px;
     float: left;
+    /* display: flex;
+    flex-direction: column; */
 }
-
 .servico-conteudo {
     padding: 10px 25px;
 }
-
 .servico-conteudo::after{
     content:"";
     clear:both;
     display: block;
 }
-
 .peca-dem {
     margin: 500px auto 100px auto;
     background: #333;
-    height: 200px    
+    height: 200px;
+    width: 100%;    
 }
-
 .btn-peca-demonstracao {
     margin: 4% 5% 6% 36%;
     width: 500px;
@@ -132,7 +191,7 @@ ul{
 .btn-peca-demonstracao:hover {
     background: #fff;
     color: #9aba2b;
-    border: #9aba2b 1px solid;
+    border: #9aba2b 1px solid;    
 }
 .box-btn{
     padding: 84px 17% 0 18%;

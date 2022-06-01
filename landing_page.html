@@ -6,7 +6,7 @@
         <title>Software para Call Center - iBrigde Tecnology</title>
         <!-- meta para dar redimencionalidade responsiva -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
@@ -24,21 +24,42 @@
                                 Potencialize a performance da sua equipe com nosso Software para call center!
                             </h1>
                             <div class="produtividade">
-                                Aumente a produtividade de sua equipe em até 70% com nosso poderoso Discador Automático!
+                                <p class='aumente'>Aumente produtividade de sua equipe em até 70% com nosso poderoso Discador Automático!</p>
                             </div>
                         </div> 
                     </div>                        
                     <div class="header-right">
                         <h2>Preencha o formulário. Solicite uma Demonstração Gratuita!</h2>
-                        <form class="formulario">
-                            <small>nome*:</small>
-                            <input type="text" name="nome" placeholder="Informe seu nome">
-                            <small>email*:</small>
-                            <input type="email" name="email" placeholder="Informe seu email">
-                            <small>telefone*:</small>
-                            <input type="text" name="telefone" placeholder="(00) 00000-0000">
-                            <small>empresa*:</small>
-                            <input type="text" name="empresa" placeholder="Informe sua empresa">
+                        <form id="form" class="formulario">
+                            <div class="div-form">
+                                <label>nome*:</label>
+                                <input type="text" id="nome" placeholder="Informe seu nome">
+                                <i class="fas fa-exclamation-circle" style.hidden="true"></i>
+                                <i class="fas fa-check-circle"></i>
+                                <small class="mensagem-erro">mensagem erro</small>
+                            </div>
+                            <div class="div-form">                            
+                                <label>email*:</label>
+                                <input type="email" id="email" placeholder="Informe seu email">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <i class="fas fa-check-circle"></i>
+                                <small class="mensagem-erro">mensagem erro</small>
+                            </div>
+                            <div class="div-form">
+                                <label>telefone*:</label>
+                                <input type="text" id="telefone" placeholder="(00) 00000-0000">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <i class="fas fa-check-circle"></i>
+                                <small class="mensagem-erro">mensagem erro</small>
+                            </div>
+                            <div class="div-form">
+                                <label>empresa*:</label>
+                                <input type="text" id="empresa" placeholder="Informe sua empresa">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <i class="fas fa-check-circle"></i>
+                                <small class="mensagem-erro">mensagem erro</small>
+                            </div>
+                            
                             <button type="submit" class="form-submit">
                                 Quero produzir mais!
                             </button>
@@ -106,6 +127,7 @@
                 </div>
             </div>
         </section>
-      
+        <script src="assets/js/javascript.js"></script>
+        <script src="https://kit.fontawesome.com/80c6527ebf.js" crossorigin="anonymous"></script>
     </body>
 </html>
