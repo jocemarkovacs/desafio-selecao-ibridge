@@ -95,7 +95,6 @@ ul{
     left:0px;
     visibility: hidden;
 }
-
 /* Error and Success */
 .div-form.success input{
     border-color:#2ecc71;
@@ -133,29 +132,31 @@ ul{
 }
 .servicos{
     text-align: center;
-    padding-top: 20px;
+    padding: 50px;
     /* 
     0 para top e bottom e auto na left e right. 
     Para ter efeito é preciso especificar uma width
     */
     margin: 0 auto; 
     width: 1140px;
+    display: flex;
+    justify-content: space-around;
 }
 .servico{
     width: 33.33%;
     height: 200px;
     float: left;
 }
-.servico-conteudo {
-    padding: 10px 25px;
+.depoimento{
+    width: 250px;
 }
-.servico-conteudo::after{
+.depoimento{
     content:"";
     clear:both;
     display: block;
 }
 .peca-dem {
-    margin-top: 500px;
+    margin-top: 250px;
     background: #333;
     height: 200px;
     width: 100%;    
@@ -192,27 +193,28 @@ ul{
 }
 .p-servicos{
     text-align: justify;
-    orientation: landscape;
+    padding: 20px;
 }
 #depoimentos{
     height: 323px;
     background-color: #343a40;
-    margin-top: 400px;
+    margin-top: 111px;
 }
 .depoimentos-content{
-    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
     padding: 20px;
+    width: 95%;    
 }
 .border{
     border: #b5cf42 dotted;
     margin: 20px 10px;
     border-radius: 10px;
-    height: 138px;
+    height: 192px;
 }
 .depoimentos-content p{
     color: white;
-    text-align: justify;
-
+    text-align: right;
 }
 .align-right{
     text-align-last: right;
@@ -220,41 +222,32 @@ ul{
 }
 .align-right img{
     text-align-last: left;
-    float: left;
+    
 }
-
 .align-right p{
     margin: 5px;
     font-size: small;
-    margin-left: 15px;    
-
+    margin-left: 15px;
 }
 .avatar-depoimento{
     border-radius: 200px;
     border: 2px solid #b5cf42;
-    height: 80%;
+    margin-top: 47px;
     width: 80%;
-}
-#cliente-depoimentos{
-    float:left;
-    display: block;
 }
 .nome-cliente{
     font-weight: bolder;
 }
 .cliente-tag-gabriela{
-    margin-left: 136px;
-    height: 110px;    
-    width: 300px;
-}
-.cliente-tag-rafael{
-    margin-left: 79px;
-    height: 110px;
-    /* border: 2px solid rgb(186, 25, 25); */
+    margin-left: 350px;
     width: 350px;
 }
+.cliente-tag-rafael{
+    margin-left: 350px;    
+    width: 350px;    
+}
 .content-left{
-    margin-top: 30px;
+    margin-top: 23%;
     margin-left: 20px;
 }
 .melhorar-performance {    
@@ -275,7 +268,7 @@ footer{
     margin-top: 30px;
     display: block;
 }
-@media (max-width: 870px) {
+@media (max-width: 560px) {
     .content-top div{
         width: 450px;
     }   
@@ -289,7 +282,7 @@ footer{
         margin-bottom: 227px;
     }
     .servico-conteudo{
-        padding: 50px
+        padding: 6px
     }
     .servico-conteudo ul, h3{
         width: 80%;
@@ -307,5 +300,45 @@ footer{
         padding: 0 20px;
         height: 126px;
     }
+    #depoimentos{
+        margin-top: 0;
+        height: 400px;
+        align-tracks:center;
+    }
+    .depoimentos-content{
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: -37px;
+        
+    }
+    .border{
+        height: 134px;
+    }
+    .cliente-tag-gabriela{
+        margin-left: 0;
+        height: 50px;    
+        width: 50;
+    }
+    .align-right img{
+        text-align-last: left;
+        /* flex-direction:column; */
+    }
+    .avatar-depoimento{
+        width: 50%;
+        margin-bottom: 12px;
+    }
+    .depoimentos-content p{
+        margin-top: 15px;
+    }
+    .p-servicos{
+        padding: 10px
+    }
+    .melhorar-performance h1 {
+        margin: auto;
+        font-size: 27px;
+        width: 100%;
+    }   
      
 }
