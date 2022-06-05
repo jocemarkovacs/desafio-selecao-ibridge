@@ -195,7 +195,7 @@ ul{
     orientation: landscape;
 }
 #depoimentos{
-    height: 400px;
+    height: 323px;
     background-color: #343a40;
     margin-top: 400px;
 }
@@ -239,6 +239,9 @@ ul{
     float:left;
     display: block;
 }
+.nome-cliente{
+    font-weight: bolder;
+}
 .cliente-tag-gabriela{
     margin-left: 136px;
     height: 110px;    
@@ -253,4 +256,56 @@ ul{
 .content-left{
     margin-top: 30px;
     margin-left: 20px;
+}
+.melhorar-performance {    
+    background: #333;
+    height: 80px;
+    margin:auto;
+    display: block;
+}
+.melhorar-performance h1{
+    margin: auto;
+    font-size: 32px;
+    width: 700px;
+    display: block;
+}
+footer{
+    height:50px;
+    text-align-last: center;
+    margin-top: 30px;
+    display: block;
+}
+@media (max-width: 870px) {
+    .content-top div{
+        width: 450px;
+    }   
+    .servicos{
+        width: 100%;
+        display:table-row;
+    } 
+    .servicos div{  
+        width: 100%;      
+        padding:auto;
+        margin-bottom: 227px;
+    }
+    .servico-conteudo{
+        padding: 50px
+    }
+    .servico-conteudo ul, h3{
+        width: 80%;
+    }
+    .peca-dem{
+        margin-top: 20px;
+    }
+    .btn-peca-demonstracao{
+        margin: auto;
+    }
+    .nossosClientes h3{
+        margin-left: 55px;
+    }
+    .sistemaCall{
+        padding: 0 20px;
+        height: 126px;
+    }
+     
 }
